@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Issue Tracker</h1>
+
+    <form id="issueForm">
+        <label for="issueTitle">Title issue:</label>
+        <input type="text" id="issueTitle" required>
+
+        <label for="issueDescription">Description:</label>
+        <textarea id="issueDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addIssue()">Add Issue</button>
+    </form>
+
+    <h2>Issue List</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="issueList">
+            <!-- Issues will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
